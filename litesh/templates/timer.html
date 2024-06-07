@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="text-center">TIMER</h1>
+
+<form class=" container my-2 border border-success py-3 rounded" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Enter your message:</label>
+      <input type="text" class="form-control" name="timermessage" id="timermessage" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">After how much time you want the alarm to set off?</label>
+      <input type="text" class="form-control" id="timerduration" name="timerduration">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">How many times?</label>
+      <input type="text" class="form-control" id="timercount" name="timercount">
+    </div>
+    <button type="submit" class="btn btn-primary">Set</button>
+  </form>
+
+
+{% endblock %}

@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.verttextabout h5 {
+    writing-mode: vertical-lr;
+    padding: 0;
+    margin: 0;
+    animation-fill-mode: forwards;
+}
+
+.imgblk img {
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(115, 114, 114);
+    /* opacity: 0.4; */
+    opacity: 0.4;
+}
+
+.imgblk img:hover {
+    animation: imgani 2s ease;
+}
+
+@keyframes imgani {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1.1;
+    }
+}
+
+.imgblk p {
+    writing-mode: vertical-lr;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.educard {
+    box-shadow: 2px 2px 2px 2px rgb(212, 208, 208);
+}
+
+.shadbox {
+    /* transform: translateX(-100%);
+    transform: translatey(20vh); */
+    transform: translate(-120%,20vh);
+    transition: 2s;
+    box-shadow: 5px 5px 5px 5px rgb(185, 181, 181);
+}
+
+.show-animate {
+    /* transform: translateX(0);
+    
+    transform: translateY(0); */
+    transform: translate(0);
+}
+
+.educard:hover{
+    transform: scale(1.1);
+}
+.progress {
+    box-shadow: 4px 4px 4px 4px rgb(176, 174, 174);
+}
+
+.bar1 {
+    position: relative;
+    right: 4vw;
+}
+
+.bar2 {
+    position: relative;
+    left: 4vw;
+}
+
+.skillname{
+    position: relative;
+    /* top: 1vh; */
+    margin: 0 0 -1rem 0;
+    z-index: 1;
+    transition: 1s;
+
+}
+.skillname:hover{
+    transform: translateY(-100%);
+}
+.progress{
+    position: relative;
+    z-index: 2;
+}
+.progress:hover{
+    z-index: 0;
+}
+
+.transparency {
+    opacity: 0.5;
+}
