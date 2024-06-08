@@ -23,4 +23,5 @@ urlpatterns = [
     path('', views.homepage,name='homer'),
     path('email-generator/', views.emailgen),
     path('timer/',views.timer),
+    path('messanger/',views.messanger),
 ]

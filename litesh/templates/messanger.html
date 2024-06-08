@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="d-flex justify-content-center align-items-center">WhatsApp Messenger</h1>
+<form method="post" class="container">
+  {% csrf_token %}
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Number with country code:</label>
+      <input type="text" class="form-control" name="number" placeholder="for example +918787878787" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your personal messages with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Message:</label>
+      <input type="text" class="form-control" name="message" placeholder="Your message here...">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Time(Hours only):</label>
+      <input type="text" class="form-control" name="hours" placeholder="Use 24Hour format">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Time(minutes):</label>
+      <input type="text" name="minutes" class="form-control" >
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+{% endblock %}

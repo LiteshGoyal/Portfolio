@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .verttextabout h5 {
     writing-mode: vertical-lr;
     padding: 0;
@@ -13,7 +12,6 @@ html {
 .imgblk img {
     border-radius: 10px;
     box-shadow: 5px 5px rgb(115, 114, 114);
-    /* opacity: 0.4; */
     opacity: 0.4;
 }
 
@@ -43,17 +41,12 @@ html {
 }
 
 .shadbox {
-    /* transform: translateX(-100%);
-    transform: translatey(20vh); */
     transform: translate(-120%,20vh);
     transition: 2s;
     box-shadow: 5px 5px 5px 5px rgb(185, 181, 181);
 }
 
 .show-animate {
-    /* transform: translateX(0);
-    
-    transform: translateY(0); */
     transform: translate(0);
 }
 
@@ -76,7 +69,6 @@ html {
 
 .skillname{
     position: relative;
-    /* top: 1vh; */
     margin: 0 0 -1rem 0;
     z-index: 1;
     transition: 1s;

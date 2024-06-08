@@ -1,9 +1,7 @@
 from time import *
-import random
-from django.http import HttpResponse,HttpResponseRedirect
-from django.shortcuts import render,redirect
-from plyer import notification
+from django.shortcuts import render
 from win10toast import ToastNotifier
+import pywhatkit as pyw
 
 def homepage(request):
     return render(request,'index.html')
@@ -40,3 +38,16 @@ def timer(request):
     except:
         print("pass")
     return render(request,'timer.html')
+
+def messanger(request):
+    try:
+        if request.method == "POST":
+            numb = request.POST.get('number')
+            message = request.POST.get('message')
+            hours = eval(request.POST.get('hours'))
+            minutes = eval(request.POST.get('minutes'))
+            print(numb,message,hours,minutes)
+            pyw.sendwhatmsg(numb,message,hours,minutes)
+    except:
+        print('failed')
+    return render(request,'messanger.html')
