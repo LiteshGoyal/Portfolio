@@ -7,6 +7,7 @@ To initialise this project you need to have installed :
 2. time module
 3. random module
 4. win10toast module
+5. pywhatkit module
 
 if you have all these modules installed, then go to the command prompt(make sure you are in PORTFOLIO/litesh directory) and run the command python manage.py runserver.
 
